@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw Line with Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d'); // 2D drawing context
+
+    // Draw a line from (50, 50) to (300, 200)
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(300, 200);
+    ctx.stroke(); // actually draw the line
+</script>
+</body>
+</html>
