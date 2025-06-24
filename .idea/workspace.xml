@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9d52859-5d19-4549-9cb8-a85522dbb92c" name="Changes" comment="Added new repository">
-      <change afterPath="$PROJECT_DIR$/Practice/2_Functions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/3_Object_Literal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice/4_Date.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.2_Functions.js.executor": "Run",
     "Node.js.3_Object_Literal.js.executor": "Run",
+    "Node.js.4_Date.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -62,15 +62,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Node.js.3_Object_Literal.js">
+  <component name="RunManager" selected="Node.js.4_Date.js">
     <configuration name="2_Functions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Practice/2_Functions.js" working-dir="$PROJECT_DIR$/Practice">
       <method v="2" />
     </configuration>
     <configuration name="3_Object_Literal.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Practice/3_Object_Literal.js" working-dir="$PROJECT_DIR$/Practice">
       <method v="2" />
     </configuration>
+    <configuration name="4_Date.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Practice/4_Date.js" working-dir="$PROJECT_DIR$/Practice">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.4_Date.js" />
         <item itemvalue="Node.js.3_Object_Literal.js" />
         <item itemvalue="Node.js.2_Functions.js" />
       </list>
@@ -91,7 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1747900068497</updated>
       <workItem from="1747900069806" duration="363000" />
-      <workItem from="1750640886321" duration="12034000" />
+      <workItem from="1750640886321" duration="12100000" />
+      <workItem from="1750726746190" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="Added new repository">
       <option name="closed" value="true" />
