@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9d52859-5d19-4549-9cb8-a85522dbb92c" name="Changes" comment="Added new repository">
-      <change afterPath="$PROJECT_DIR$/Practice/5_Count_Numbers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +100,7 @@
       <updated>1747900068497</updated>
       <workItem from="1747900069806" duration="363000" />
       <workItem from="1750640886321" duration="12100000" />
-      <workItem from="1750726746190" duration="4987000" />
+      <workItem from="1750726746190" duration="5590000" />
     </task>
     <task id="LOCAL-00001" summary="Added new repository">
       <option name="closed" value="true" />
