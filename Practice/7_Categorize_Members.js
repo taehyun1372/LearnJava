@@ -7,3 +7,5 @@ function openOrSenior(data){
 
 result = openOrSenior(input);
 result.forEach((i)=>console.log(i));
+
+console.log('Hello World!');
