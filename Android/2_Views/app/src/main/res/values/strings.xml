@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">2_Views</string>
+    <string name="stopButtonText">Stop</string>
+    <string name="startButtonText">Start</string>
+    <string name="googleButtonText">Google</string>
+    <string name="callButtonText">Call</string>
+    <string name="mediaButtonText">Media</string>
+    <string name="finishButtonText">Finish</string>
+</resources>
