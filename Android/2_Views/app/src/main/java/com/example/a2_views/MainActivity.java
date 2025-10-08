@@ -21,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
     Button callButton;
     Button finishButton;
     Button mediaButton;
+
+    Button viewsButton;
+    Button textButton;
+
+    Button calculatorButton;
+
+    Button buttonButton;
+
+    Button albumButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +91,66 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        viewsButton = (Button)findViewById(R.id.viewsButton);
+        viewsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v)
+            {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentLayout, new ViewsFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        textButton = (Button)findViewById(R.id.textButton);
+        textButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v)
+            {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentLayout, new TextFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        calculatorButton = (Button)findViewById(R.id.calculatorButton);
+        calculatorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v)
+            {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentLayout, new CalculatorFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        buttonButton = (Button)findViewById(R.id.buttonButton);
+        buttonButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v)
+            {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentLayout, new ButtonFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        albumButton = (Button)findViewById(R.id.albumButton);
+        albumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v)
+            {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentLayout, new AlbumFragment())
+                        .addToBackStack(null)
+                        .commit();
             }
         });
     }

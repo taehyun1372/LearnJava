@@ -8,9 +8,11 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="15dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -21,8 +23,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginBottom="50dp"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/startButton"
@@ -36,13 +37,14 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="@string/stopButtonText"
-            android:layout_marginBottom="40dp"/>
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/googleButton"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="@string/googleButtonText"
+            android:backgroundTint="#70f08080"
             android:layout_marginBottom="10dp"/>
 
         <Button
@@ -65,6 +67,52 @@
             android:layout_width="match_parent"
             android:text="@string/finishButtonText"
             android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="0dp">
+
+            <Button
+                android:id="@+id/viewsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Views"/>
+
+            <Button
+                android:id="@+id/textButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"/>
+
+            <Button
+                android:id="@+id/calculatorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculator"/>
+
+            <Button
+                android:id="@+id/buttonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/albumButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Album"/>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fragmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
     </LinearLayout>
 
 
