@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button albumButton;
 
+    Button practiceButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -149,6 +151,18 @@ public class MainActivity extends AppCompatActivity {
             {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentLayout, new AlbumFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        practiceButton = (Button)findViewById(R.id.practiceButton);
+        practiceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v)
+            {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentLayout, new PracticeFragment())
                         .addToBackStack(null)
                         .commit();
             }
