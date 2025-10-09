@@ -14,6 +14,10 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button btnLinear;
+    Button btnWeight;
+    Button btnNesting;
+
+    Button btnCode;
     FrameLayout flMain;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,39 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.flMain, new LinearFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnWeight = (Button)findViewById(R.id.btnWeight);
+        btnWeight.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new WeightFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnNesting = (Button)findViewById(R.id.btnNesting);
+        btnNesting.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new NestingFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnCode = (Button)findViewById(R.id.btnCode);
+        btnCode.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new CodeFragment())
                         .addToBackStack(null)
                         .commit();
             }
