@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <EditText
+                android:id="@+id/etInput1"
+                android:layout_span="5"
+                android:hint="Input 1 : "/>
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/etInput2"
+                android:layout_span="5"
+                android:hint="Input 2 : "/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_height="30dp"
+                android:layout_span="5"
+                android:textSize="20sp"
+                android:hint="Result : "
+                android:layout_marginVertical="10dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn0"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:text="1"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:text="2"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn3"
+                android:text="3"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:text="4"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:text="5"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn6"
+                android:text="6"/>
+
+            <Button
+                android:id="@+id/btn7"
+                android:text="7"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:text="8"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btn9"
+                android:text="9"/>
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_column="2"
+                android:text="="/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnPlus"
+                android:text="+"/>
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:text="-"/>
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:text="x"/>
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:text="/"/>
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

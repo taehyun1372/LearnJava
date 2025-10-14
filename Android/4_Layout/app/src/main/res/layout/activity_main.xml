@@ -40,6 +40,35 @@
                 android:layout_height="wrap_content"
                 android:text="Code"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relative"/>
+
+            <Button
+                android:id="@+id/btnRelative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relative2"/>
+
+            <Button
+                android:id="@+id/btnTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table"/>
+
+            <Button
+                android:id="@+id/btnCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calc"/>
+
+        </LinearLayout>
         <FrameLayout
             android:id="@+id/flMain"
             android:layout_width="match_parent"

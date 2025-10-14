@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <Button android:text="1" />
+            <Button android:text="2"
+                android:layout_column="2"/>
+            <Button android:text="3"
+                android:layout_span="1"
+                android:layout_column="1"/>
+        </TableRow>
+
+        <!-- Row 2: the middle button spans 2 columns -->
+        <TableRow>
+            <Button android:text="4" />
+            <Button
+                android:text="5"
+                android:layout_span="2" />
+            <Button android:text="6" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

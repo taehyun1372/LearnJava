@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     Button btnNesting;
 
     Button btnCode;
+    Button btnRelative;
+
+    Button btnTable;
+
+    Button btnRelative2;
+    Button btnCalc;
+
     FrameLayout flMain;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +76,50 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.flMain, new CodeFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnRelative = (Button)findViewById(R.id.btnRelative);
+        btnRelative.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new RelativeFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnRelative2 = (Button)findViewById(R.id.btnRelative2);
+        btnRelative2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new Relative2Fragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnTable = (Button)findViewById(R.id.btnTable);
+        btnTable.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new TableFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnCalc = (Button)findViewById(R.id.btnCalc);
+        btnCalc.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new CalcFragment())
                         .addToBackStack(null)
                         .commit();
             }
