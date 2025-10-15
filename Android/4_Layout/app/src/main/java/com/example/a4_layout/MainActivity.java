@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnRelative2;
     Button btnCalc;
+    Button btnGrid;
+
 
     FrameLayout flMain;
     @Override
@@ -120,6 +122,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.flMain, new CalcFragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        btnGrid = (Button)findViewById(R.id.btnGrid);
+        btnGrid.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.flMain, new GridFragment())
                         .addToBackStack(null)
                         .commit();
             }

@@ -69,6 +69,17 @@
                 android:text="Calc"/>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/btnGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grid"/>
+
+        </LinearLayout>
         <FrameLayout
             android:id="@+id/flMain"
             android:layout_width="match_parent"
